@@ -13,7 +13,7 @@ body {
 
 .grid {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 25px;
 }
 
 .img-responsive {
@@ -38,6 +38,10 @@ body {
   margin: 30px 0;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -47,7 +51,7 @@ body {
 }
 
 .btn {
-  background-color: #462cb3;
+  background-color: #486156;
   color: white;
   display: block;
   font-weight: 700;
@@ -67,7 +71,7 @@ section {
 }
 
 section.secondary {
-  background-color: lightblue;
+  background-color: #486156;
 }
 
 section.secondary h2 {
@@ -75,8 +79,16 @@ section.secondary h2 {
   padding-left: 0;
 }
 
+section.tertiary h2 {
+  border-left: none;
+  padding-left: 0;
+}
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(
+      rgba(72, 97, 86, 0.4),
+      rgba(72, 97, 86, 0.4)
+    ),
     url(../images/wreath.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,10 +120,11 @@ header h3 {
 }
 
 header a {
-  background-color: white;
+  background-color: #486156;
+  color: white;
   display: inline-block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 3px;
   line-height: 1.5;
   margin: 30px 0 0 0;
@@ -121,12 +134,12 @@ header a {
 }
 
 main {
-  background-color: #eee;
+  background-color: #a7a4a3;
 }
 
 main h2 {
-  color: purple;
-  border-left: 5px solid purple;
+  color: white;
+  border-left: 5px solid white;
   font-weight: 800;
   font-size: 13px;
   line-height: 1;
@@ -159,14 +172,14 @@ main h5 {
 
 main p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
 }
 
 footer {
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.8),
-      rgba(39, 32, 68, 0.8)
+      rgba(72, 97, 86, 0.8),
+      rgba(72, 97, 86, 0.8)
     ),
     url("../images/ribbon.jpg");
   background-repeat: no-repeat;
@@ -184,7 +197,7 @@ footer h3 {
 
 footer p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   opacity: 0.7;
 }
@@ -211,6 +224,10 @@ footer a {
   width: 100%;
 }
 
+.photo-gallery {
+  margin: 30px 0;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 50px 0;
@@ -228,6 +245,11 @@ footer a {
     font-size: 12px;
   }
 
+  header a {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
@@ -235,5 +257,9 @@ footer a {
 
   section {
     padding: 50px;
+  }
+
+  .img-responsive {
+    width: 400px;
   }
 }
