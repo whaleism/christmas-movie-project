@@ -3,8 +3,12 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grid {
@@ -14,20 +18,61 @@ body {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  background-color: #462cb3;
+  color: white;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+}
+
+section.secondary {
+  background-color: lightblue;
+}
+
+section.secondary h2 {
+  border-left: none;
+  padding-left: 0;
 }
 
 header {
@@ -76,7 +121,7 @@ header a {
 }
 
 main {
-  background-color: grey;
+  background-color: #eee;
 }
 
 main h2 {
@@ -98,6 +143,20 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+
 main p {
   font-weight: 400;
   font-size: 16px;
@@ -113,7 +172,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 footer h3 {
@@ -125,7 +184,7 @@ footer h3 {
 
 footer p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   opacity: 0.7;
 }
@@ -135,7 +194,7 @@ footer ul {
 }
 
 footer li {
-  font-size: 12px;
+  font-size: 14px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -146,8 +205,10 @@ footer a {
   opacity: 0.7;
 }
 
-.tree {
-  max-width: 500px;
+.embed {
+  aspect-ratio: 16 / 9;
+  border: none;
+  width: 100%;
 }
 
 @media (max-width: 900px) {
